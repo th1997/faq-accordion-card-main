@@ -8,10 +8,13 @@
 main{
     background-image: url("images/bg-pattern-desktop.svg");
     background-repeat: no-repeat;
-    background-position: top 120% left -60%;
+    background-position: top 65% left 1500%;
     background-color: white;
     display: flex;
+    justify-content: space-between;
     border-radius: 20px 20px;
+    padding-top: 4%;
+    padding-bottom: 4%;
 }
 
 body{
@@ -30,6 +33,23 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+    padding-left: 50%;
+}
+
+.womanBG{
+    position: absolute;
+    right: 16%;
+    bottom: 0;
+    overflow: hidden;
+}
+
+.womanBG img{ margin-left:-82px }
+
+.boxBG{
+    position: absolute;
+    right: 79%;
+    bottom: 11%;
 }
 
 .FAQBox{
@@ -42,7 +62,7 @@ input[type=radio]{
     display: none;
 }
 
-.title h1{
+.title h1, footer{
     color: hsl(238, 29%, 16%)
 }
 
