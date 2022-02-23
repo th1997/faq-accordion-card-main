@@ -3,38 +3,72 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | FAQ Accordion Card</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-  How many team members can I invite?
-  You can invite up to 2 additional users on the Free plan. There is no limit on 
-  team members for the Premium plan.
+  <main>
+    <div class="imgBox">
+      <div class="womanBG">
+        <img src="images/illustration-woman-online-desktop.svg" alt="Woman Background">
+      </div>
+      <div class="boxBG">
+        <img src="images/illustration-box-desktop.svg" alt="Red Box">
+      </div>
+    </div>
+    <div class="FAQBox">
+      <div class="title">
+        <h1>FAQ</h1>
+      </div>
+      <input type="radio" id="choice1">
+      <label for="choice1">How many team members can I invite?</label>
+      <div class="content">
+          <div class="inner">
+            You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.
+          </div>
+      </div>
+      <input type="radio" id="choice2">
+      <label for="choice2">What is the maximum file upload size?</label>
+      <div class="content">
+          <div class="inner">
+            No more than 2GB. All files in your account must fit your allotted storage space.
+          </div>
+      </div>
+      <input type="radio" id="choice3">
+      <label for="choice3">How do I reset my password?</label>
+      <div class="content">
+          <div class="inner">
+            Click “Forgot password” from the login page or “Change password” from your profile page.
+            A reset link will be emailed to you.
+          </div>
+      </div>
+      <input type="radio" id="choice4">
+      <label for="choice4">Can I cancel my subscription?</label>
+      <div class="content">
+          <div class="inner">
+            Yes! Send us a message and we’ll process your request no questions asked.
+          </div>
+      </div>
+      <input type="radio" id="choice5">
+      <label for="choice5">Do you provide additional support?</label>
+      <div class="content">
+          <div class="inner">
+            Chat and email support is available 24/7. Phone lines are open during normal business hours.
+          </div>
+      </div>
+    </div>
+  </main>
 
-  What is the maximum file upload size?
-  No more than 2GB. All files in your account must fit your allotted storage space.
-
-  How do I reset my password?
-  Click “Forgot password” from the login page or “Change password” from your profile page.
-  A reset link will be emailed to you.
-
-  Can I cancel my subscription?
-  Yes! Send us a message and we’ll process your request no questions asked.
-
-  Do you provide additional support?
-  Chat and email support is available 24/7. Phone lines are open during normal business hours.
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <footer>
+    <p>Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by
+      <a href="https://github.com/th1997">S0kyl</a>.
+    </p>
+  </footer>
+  
 </body>
 </html>
