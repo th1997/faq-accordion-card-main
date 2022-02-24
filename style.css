@@ -60,11 +60,32 @@ body{
     font-size: 12px;
 }
 
-.FAQBox label{
-    color: hsl(237, 12%, 33%)
+.content .inner{
+    opacity: 0;
+    padding: 0;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.25s ease-in-out;
 }
 
-input[type=radio]{
+input + label{
+    background:url('images/icon-arrow-down.svg') no-repeat;
+    background-position: top 50% left 92%;
+    margin-right: 0;
+}
+
+input:checked + label + .content .inner {
+    height: 2em;
+    padding: 0.7em 1em;
+    opacity: 1;
+}
+
+
+.FAQBox label{
+    color: hsl(237, 12%, 33%);
+}
+
+input[type=checkbox]{
     display: none;
 }
 
