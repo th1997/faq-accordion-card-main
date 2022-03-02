@@ -137,17 +137,19 @@ footer a { color: hsl(228, 45%, 44%) }
         flex-direction: column;
         background-color: white;
         background-position: top 0 left 50%;
-        padding-top: 15%;
         padding-bottom: 10%;
         margin: 7%;
     }
 
-    .boxBG{opacity: 0}
+    .boxBG, .imgBox .womanBG {opacity: 0}
 
-    .imgBox{ 
+    .imgBox::before{ 
         padding: 0;
         content: url("images/illustration-woman-online-mobile.svg");
-        width: 100%;
+        width: 172%;
+        padding-bottom: 55%;
+        margin-top: -93%;
+        margin-right: 100%;
     }
 
     .title h1{ text-align: center }
