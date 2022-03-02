@@ -8,12 +8,11 @@
 main{
     background-image: url("images/bg-pattern-desktop.svg");
     background-repeat: no-repeat;
-    background-position: top 65% left 150%;
+    background-position: top 72% left 690%;
     background-color: white;
     display: flex;
     border-radius: 20px 20px;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding: 6%;
 }
 
 body{
@@ -43,27 +42,50 @@ body{
     overflow: hidden;
 }
 
-.womanBG img{ margin-left:-82px }
+.womanBG img{ margin-left:-87px }
 
 .boxBG{
     position: absolute;
-    right: 79%;
-    bottom: 11%;
+    right: 98.4%;
+    bottom: 13%;
 }
 
 .FAQBox{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     font-size: 12px;
-    padding-top: 12%;
-    padding-bottom: 12%;
-    height: 300px;
+    height: auto;
+    row-gap: 25px;
+}
+
+.title h1{
+    color: hsl(238, 29%, 16%);
+    font-size: 30px;
+    margin-top: -15%;
 }
 
 .question_container{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 6%;
     border-bottom: solid 1px;
-    color: hsl(240, 6%, 50%);
+    color: hsl(240, 5%, 63%);
+}
+
+.question_container img{
+    width: 4.2%;
+    height: 50%;
+    padding-top: 1%;
+}
+
+input:checked + label img{
+    transition: all 0.30s ease-in-out;
+    transform: rotate(180deg);
+}
+
+input + label img{
+    transition: all 0.30s ease-in-out;
 }
 
 .content .inner{
@@ -74,28 +96,21 @@ body{
 }
 
 input:checked + label + .content .inner {
-    background-position: top 50% left 92%;
     height: auto;
     opacity: 1;
+    margin-top: 3%;
 }
 
 input:checked + label{
-    color : hsl(237, 12%, 33%)
-}
-
-input:checked {
-    transform:rotate(180deg);
-    background-position: top 50% left 92%;
-    margin-right: 0;
+    color : hsl(237, 12%, 33%);
 }
 
 .FAQBox label{
+    display: flex;
+    justify-content: space-between;
     font-weight: 700;
     font-size: 13px;
     color: hsl(240, 6%, 50%);
-    background:url('images/icon-arrow-down.svg') no-repeat;
-    background-position: top 50% left 92%;
-    margin-right: 0;
 }
 
 .FAQBox label:hover{
@@ -105,11 +120,6 @@ input:checked {
 
 input[type=checkbox]{
     display: none;
-}
-
-.title h1{
-    color: hsl(238, 29%, 16%);
-    font-size: 30px;
 }
 
 footer { 
